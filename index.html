@@ -1,9 +1,21 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, minimum-scale=0.1">
-		<title>logo-black.jpg (532×496)</title>
+		<title>CTFlag Org</title>
+		<script type="text/javascript"> 
+			var t = 5;
+			setInterval("refer()", 1000);
+			function refer() {
+				if (t == 0){ location = "https://book.ctflag.org"; }
+				document.getElementById('tip').innerHTML = "" + t + " THE QUIETER YOU ARE THE MORE YOU ARE ABLE TO HEAR";
+				t--;
+			}
+		</script>
 	</head>
 	<body style="margin: 60px; background: black; text-align: center;">
 		<img style="-webkit-user-select: none;margin: auto;cursor: zoom-in;" src="https://book.ctflag.org/logo-black.jpg" width="532" height="496">
 	</body>
+	<div style="padding-top: 20px; text-align: center;">
+		<span id="tip" style="color: red; font-weight: 100;"></span>
+	</div>
 </html>
